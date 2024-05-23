@@ -1,19 +1,11 @@
--f https://eggrepo.eea.europa.eu/simple/
--f https://code.codesyntax.com/static/public/
--f file:///home/erral/downloads/eggs
-
-###############################################################################
-# mxdev combined constraints
--c constraints-mxdev.txt
-
-
 ###############################################################################
 # mxdev development sources
--e ./sources/clms.addon
--e ./sources/clms.types
--e ./sources/clms.downloadtool
--e ./sources/clms.statstool
--e ./sources/eea.meeting
--e ./sources/ftw.tokenauth
--e ./sources/pas.plugins.oidc
+-e ./sources/clms.addon --pre
+-e ./sources/clms.types --pre
+-e ./sources/clms.downloadtool --pre
+-e ./sources/clms.statstool --pre
+-e ./sources/eea.meeting --pre
+-e ./sources/ftw.tokenauth --pre
+-e ./sources/pas.plugins.oidc --pre
+
 

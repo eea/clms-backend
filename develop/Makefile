@@ -42,10 +42,8 @@ endif
 ##############################################################################
 # SETTINGS AND VARIABLE
 
-PLONE_VERSION=6.0.7
+PLONE_VERSION=6.0.10
 #`docker run -i --rm eeacms/plone-backend env | grep PLONE_VERSION | sed "s/PLONE_VERSION=//g"`
-PIP_PARAMS=
-#`docker run -i --rm eeacms/plone-backend env | grep PIP_PARAMS | sed "s/PIP_PARAMS=//g"`
 PYTHON?=python3.11
 
 # Top-level targets
@@ -59,24 +57,38 @@ clean:			## Cleanup environment
 .PHONY: bootstrap
 bootstrap:		## Bootstrap python environment
 	$(PYTHON) -m venv .
-	bin/pip install --upgrade pip mxdev pylint black
+	bin/pip install --upgrade pip mxdev pylint black -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
 
 .PHONY: install
 install:		## Install Plone and develop add-ons
-	bin/pip install Plone plone.volto -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
-	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload collective.exportimport -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt" $(PIP_PARAMS)
+	bin/pip install Plone plone.volto -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
+	bin/pip install zope.testrunner plone.app.testing plone.reload dm.plonepatches.reload collective.exportimport -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
+	bin/pip install python-ldap==3.4.3 pas.plugins.ldap==1.8.2 -c "https://dist.plone.org/release/$(PLONE_VERSION)/constraints.txt"
 	bin/mkwsgiinstance -d . -u admin:admin
 	mkdir -p var/blobstorage var/filestorage
 
 .PHONY: develop
 develop:		## Develop source.ini add-ons using mxdev
-#	bin/mxdev -c sources.ini
-	bin/pip install -r requirements-mxdev.txt $(PIP_PARAMS)
-	bin/pip install -r ../requirements.txt -c ../constraints.txt $(PIP_PARAMS)
+	bin/pip install -r ../requirements.txt -c ../constraints.txt
+	bin/mxdev -c sources.ini
+	bin/pip install -r requirements-mxdev.txt
+
+.PHONY: status
+status: 		## Check sources for changes
+	./scripts/status.sh
+
+.PHONY: pull
+pull:			## Pull sources from git
+	./scripts/pull.sh
 
 .PHONY: start
-start:			## Start Plone backend
-	bin/runwsgi -v etc/zope.ini
+start:			## Start Plone backend (standalone)
+	bin/runwsgi -v etc/zope.ini config_file=zope.conf
+
+.PHONY: relstorage
+relstorage:		## Start Plone backend (RelStorage/PostgreSQL)
+	docker compose up -d
+	bin/runwsgi -v etc/zope.ini config_file=relstorage.conf
 
 .PHONY: release
 release:		## See release candidates
