@@ -107,4 +107,9 @@ z3c.unconfigure==2.0
 # clms.addon==8.4.dev0
 Products.mcdutils==4.1
 
-pyproj==3.6.1 
+pyproj==3.6.1
+
+
+yafowil.plone==5.0.0a1
+yafowil.bootstrap==2.0.0a1
+plone.app.widgets==5.0.0

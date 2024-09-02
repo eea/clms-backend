@@ -11,3 +11,4 @@ ftw.tokenauth
 pas.plugins.oidc
 pas.plugins.ldap
 eea.volto.policy
+plone.app.widgets
