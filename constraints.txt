@@ -1,7 +1,7 @@
 -f https://eggrepo.eea.europa.eu/simple/
 -f https://code.codesyntax.com/static/public/
-clms.addon==12.0
-clms.downloadtool==9.3
+clms.addon==12.1
+clms.downloadtool==9.6
 clms.statstool==3.7
 clms.types==16.7
 
