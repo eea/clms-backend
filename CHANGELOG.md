@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [6.0.15-13](https://github.com/eea/clms-backend/releases/tag/6.0.15-13) - 2025-05-28T14:11:07Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-8 ~ 6.0.15-9 
+
+##### eeacms/plone-backend:[6.0.15-9](https://github.com/eea/plone-backend/releases/tag/6.0.15-9)
+###### Internal
+
+- chore: [JENKINS] remove debug - [valentinab25 - [`120747d`](https://github.com/eea/plone-backend/commit/120747d888aafb924da8483e0e7d86b97bdd3802)]
+
+### Internal
+
+- wait for db startup - [silviupanaite -  [`17fc5c9`](https://github.com/eea/clms-backend/commit/17fc5c9289ab61112ea424fe0e32805a8e82aceb)]
+- switch to pg_isready - [silviupanaite -  [`b60d7bc`](https://github.com/eea/clms-backend/commit/b60d7bc091643ccd80aee4c8bcc8f4b4a456121b)]
+
 ## [6.0.15-12](https://github.com/eea/clms-backend/releases/tag/6.0.15-12) - 2025-05-21T13:59:17Z
 
 ### Plone
