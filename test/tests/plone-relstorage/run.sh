@@ -13,6 +13,16 @@ zname="relstorage-container-$RANDOM-$RANDOM"
 zpull="$(docker pull postgres:9-alpine)"
 zid="$(docker run -d --name "$zname" -e POSTGRES_USER=plone -e POSTGRES_PASSWORD=plone -e POSTGRES_DB=plone postgres:9-alpine)"
 
+# Wait for PostgreSQL to be up
+retries=0
+while ! docker logs "$zid" 2>&1 | grep -q "database system is ready to accept connections"; do
+    if [ "$retries" -ge "$PLONE_TEST_TRIES" ]; then
+        exit 1
+    fi
+    sleep "$PLONE_TEST_SLEEP"
+    ((retries++))
+done
+
 # Start Plone as RelStorage Client
 pname="plone-container-$RANDOM-$RANDOM"
 pid="$(docker run -d --name "$pname" --link=$zname:db -e RELSTORAGE_DSN="dbname='plone' user='plone' host='db' password='plone'" "$image")"
