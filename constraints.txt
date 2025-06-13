@@ -1,6 +1,6 @@
 -f https://eggrepo.eea.europa.eu/simple/
 -f https://code.codesyntax.com/static/public/
-clms.addon==13.5
+clms.addon==13.5.1 # CDSE prerelease!
 clms.downloadtool==10.1.1 # CDSE prerelease!
 clms.statstool==3.7
 clms.types==17.7
