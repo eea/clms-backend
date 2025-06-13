@@ -1,8 +1,8 @@
 pip==23.0.1
 setuptools==67.6.1
 wheel==0.40.0
-clms.addon
-clms.downloadtool
+clms.addon==13.5.1 # CDSE prerelease!
+clms.downloadtool==10.1.1 # CDSE prerelease!
 clms.statstool
 clms.types
 collective.folderishtypes

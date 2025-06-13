@@ -1,11 +1,11 @@
 -f https://eggrepo.eea.europa.eu/simple/
 -f https://code.codesyntax.com/static/public/
-clms.addon==12.7
-clms.downloadtool==9.8
+# clms.addon==13.5.1 # CDSE prerelease! - see requirements.txt
+# clms.downloadtool==10.1.1 # CDSE prerelease! - see requirements.txt
 clms.statstool==3.7
-clms.types==17.5
+clms.types==17.7
 
-eea.volto.policy==7.0
+eea.volto.policy==7.2
 eea.meeting==2.0a1+cs.18
 
 ftw.tokenauth==2.0+cs.9
@@ -107,4 +107,4 @@ z3c.unconfigure==2.0
 # clms.addon==8.4.dev0
 Products.mcdutils==4.1
 
-pyproj==3.6.1 
+pyproj==3.6.1
