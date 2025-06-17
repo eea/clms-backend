@@ -5,12 +5,14 @@ dir="$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 image="$1"
 
-PLONE_TEST_SLEEP=10
+PLONE_TEST_SLEEP=3
 PLONE_TEST_TRIES=5
 
+vname="/tmp/plone-data-$RANDOM-$RANDOM"
 cname="plone-container-$RANDOM-$RANDOM"
-cid="$(docker run -d --name "$cname" "$image")"
-trap "docker rm -vf $cid > /dev/null" EXIT
+vid="$(mkdir -p $vname)"
+cid="$(docker run -d --user=$(id -u) -v $vname:/data --name $cname $image)"
+trap "docker rm -vf $cid > /dev/null; rm -rf $vname > /dev/null" EXIT
 
 get() {
 	docker run --rm -i \

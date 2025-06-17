@@ -9,9 +9,9 @@ usage() {
 	cat <<EOUSAGE
 
 usage: $self [-t test ...] image:tag [...]
-   ie: $self eeacms/plone-backend:6.0.0a1
-       $self -t utc eeacms/plone-backend:6.0.0a1
-       $self -t utc eeacms/plone-backend:6.0.0a1 -t plone-zeoclient
+   ie: $self eeacms/plone-backend:6.0.5-1
+       $self -t utc eeacms/plone-backend:6.0.5-1
+       $self -t utc eeacms/plone-backend:6.0.5-1 -t plone-zeoclient
 
 This script processes the specified Docker images to test their running
 environments.
@@ -98,12 +98,12 @@ done
 didFail=
 for dockerImage in "$@"; do
 	echo "testing $dockerImage"
-	
+
 	repo="${dockerImage%:*}"
 	tagVar="${dockerImage#*:}"
 	#version="${tagVar%-*}"
 	variant="${tagVar##*-}"
-	
+
 	case "$tagVar" in
 		*onbuild*)
 			# "maven:onbuild-alpine" is still onbuild
@@ -139,12 +139,12 @@ for dockerImage in "$@"; do
 			variant='windowsservercore'
 			;;
 	esac
-	
+
 	testRepo="$repo"
 	if [ -z "$keepNamespace" ]; then
 		testRepo="${testRepo##*/}"
 	fi
-	
+
 	for possibleAlias in \
 		"${testAlias[$repo:$variant]:-}" \
 		"${testAlias[$repo]:-}" \
@@ -156,7 +156,7 @@ for dockerImage in "$@"; do
 			break
 		fi
 	done
-	
+
 	explicitVariant=
 	for possibleExplicit in \
 		"${explicitTests[:$variant]:-}" \
@@ -170,7 +170,7 @@ for dockerImage in "$@"; do
 			break
 		fi
 	done
-	
+
 	testCandidates=()
 	if [ -z "$explicitVariant" ]; then
 		testCandidates+=( "${globalTests[@]}" )
@@ -196,14 +196,14 @@ for dockerImage in "$@"; do
 			${imageTests[$repo:$variant]:-}
 		)
 	fi
-	
+
 	tests=()
 	for t in "${testCandidates[@]}"; do
 		if [ "${#argTests[@]}" -gt 0 ] && [ -z "${argTests[$t]:-}" ]; then
 			# skipping due to -t
 			continue
 		fi
-		
+
 		if [ \
 			! -z "${globalExcludeTests[${testRepo}_$t]:-}" \
 			-o ! -z "${globalExcludeTests[${testRepo}:${variant}_$t]:-}" \
@@ -215,29 +215,29 @@ for dockerImage in "$@"; do
 			# skipping due to exclude
 			continue
 		fi
-		
+
 		tests+=( "$t" )
 	done
-	
+
 	# check for zero tests before checking for existing image
 	# this will make windows variants no longer fail
 	if [ "${#tests[@]}" -eq '0' ]; then
 		echo $'\timage has no tests...skipping'
 		continue
 	fi
-	
+
 	if ! docker inspect "$dockerImage" &> /dev/null; then
 		echo $'\timage does not exist!'
 		didFail=1
 		continue
 	fi
-	
+
 	currentTest=0
 	totalTest="${#tests[@]}"
 	for t in "${tests[@]}"; do
 		(( currentTest+=1 ))
 		echo -ne "\t'$t' [$currentTest/$totalTest]..."
-		
+
 		# run test against dockerImage here
 		# find the script for the test
 		scriptDir="${testPaths[$t]}"

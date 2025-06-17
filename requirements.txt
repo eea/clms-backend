@@ -1,5 +1,5 @@
-clms.addon
-clms.downloadtool
+clms.downloadtool @ git+https://github.com/eea/clms.downloadtool.git@10.1.1
+clms.addon @ git+https://github.com/eea/clms.addon.git@13.5.1
 clms.statstool
 clms.types
 collective.folderishtypes
