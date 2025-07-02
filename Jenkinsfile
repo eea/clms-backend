@@ -4,7 +4,6 @@ pipeline {
   environment {
     GIT_NAME = "clms-backend"
     SONARQUBE_TAG = 'land.copernicus.eu'
-    SONARQUBE_TAG_2 = 'ask.copernicus.eu'
     SONARQUBE_TAG_DEMO = 'clmsdemo.devel6cph.eea.europa.eu '   
     RANCHER_STACKID = "1st2165"
     RANCHER_ENVID = "1a486860"
@@ -87,24 +86,6 @@ pipeline {
       }
     }
     
-    stage('Update SonarQube Tags: Prod ASK') {
-      when {
-        not {
-          environment name: 'SONARQUBE_TAG_2', value: ''
-        }
-        buildingTag()
-      }
-      steps{
-        node(label: 'docker') {
-          withSonarQubeEnv('Sonarqube') {
-            withCredentials([string(credentialsId: 'eea-jenkins-token', variable: 'GIT_TOKEN')]) {
-              sh '''docker pull eeacms/gitflow'''
-              sh '''docker run -i --rm --name="${BUILD_TAG}-sonar2" -e GIT_NAME=${GIT_NAME} -e GIT_TOKEN="${GIT_TOKEN}" -e SONARQUBE_TAG=${SONARQUBE_TAG_2} -e SONARQUBE_TOKEN=${SONAR_AUTH_TOKEN} -e SONAR_HOST_URL=${SONAR_HOST_URL}  eeacms/gitflow /update_sonarqube_tags_backend.sh'''
-            }
-          }
-        }
-      }
-    }
 
     stage('Update SonarQube Tags: Demo') {
       when {
