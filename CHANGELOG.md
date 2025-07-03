@@ -1,6 +1,12 @@
 # Changelog
 
 
+## [6.0.15-18](https://github.com/eea/clms-backend/releases/tag/6.0.15-18) - 2025-07-03T23:15:12Z
+
+### Internal
+
+- chore: [JENKINS] remove ask.copernicus.eu - [valentinab25 -  [`8287fbb`](https://github.com/eea/clms-backend/commit/8287fbb09bca547ffecd3d1ddea2434a3f86e3a4)]
+
 ## [6.0.15-15](https://github.com/eea/clms-backend/releases/tag/6.0.15-15) - 2025-06-11T18:33:43Z
 
 ### Plone
