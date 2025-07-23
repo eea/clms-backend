@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.15-19](https://github.com/eea/clms-backend/releases/tag/6.0.15-19) - 2025-07-23T23:42:59Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-11 ~ 6.0.15-12 
+
+##### eeacms/plone-backend:[6.0.15-12](https://github.com/eea/plone-backend/releases/tag/6.0.15-12)
+###### Dependency updates
+
+###### [pas.plugins.eea](https://pypi.org/project/pas.plugins.eea/#changelog): 1.4 ~ 1.5
+
+
 ## [6.0.15-18](https://github.com/eea/clms-backend/releases/tag/6.0.15-18) - 2025-07-03T23:15:12Z
 
 ### Internal
