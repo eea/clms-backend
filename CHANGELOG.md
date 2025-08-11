@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.0.15-26](https://github.com/eea/clms-backend/releases/tag/6.0.15-26) - 2025-08-11T23:43:36Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-15 ~ 6.0.15-16 
+
+##### eeacms/plone-backend:[6.0.15-16](https://github.com/eea/plone-backend/releases/tag/6.0.15-16)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 8.1 ~ 8.2
+
+* Change: Release with an older python 3 version
+ [valentinab25]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 8.1 ~ 8.2
+
+* Change: Release with an older python 3 version
+  [valentinab25]
+
+
 ## [6.0.15-22](https://github.com/eea/clms-backend/releases/tag/6.0.15-22) - 2025-08-05T23:47:42Z
 
 ### Plone
