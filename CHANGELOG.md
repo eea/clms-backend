@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [6.0.15-27](https://github.com/eea/clms-backend/releases/tag/6.0.15-27) - 2025-08-12T23:14:47Z
+
+### Dependency updates
+
+##### [clms.downloadtool](https://pypi.org/project/clms.downloadtool/#changelog): 10.1 ~ 10.2
+
+
 ## [6.0.15-26](https://github.com/eea/clms-backend/releases/tag/6.0.15-26) - 2025-08-11T23:43:36Z
 
 ### Plone
