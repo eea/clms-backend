@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [6.0.15-36](https://github.com/eea/clms-backend/releases/tag/6.0.15-36) - 2025-08-20T23:50:08Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-17 ~ 6.0.15-18 
+
+##### eeacms/plone-backend:[6.0.15-18](https://github.com/eea/plone-backend/releases/tag/6.0.15-18)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 8.3 ~ 8.4
+
+* Change: feat: Control Navigation Settings TTW - refs #288509
+ [avoinea]
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 8.3 ~ 8.4
+
+* Change: feat: Control Navigation Settings TTW - refs #288509
+  [avoinea]
+
+
 ## [6.0.15-35](https://github.com/eea/clms-backend/releases/tag/6.0.15-35) - 2025-08-20T16:22:36Z
 
 ### Plone
