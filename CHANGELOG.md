@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [6.0.15-43](https://github.com/eea/clms-backend/releases/tag/6.0.15-43) - 2025-08-29T23:16:04Z
+
+### Dependency updates
+
+##### [clms.downloadtool](https://pypi.org/project/clms.downloadtool/#changelog): 11.2 ~ 11.3
+
+##### [clms.types](https://github.com/eea/clms.types/releases): 18.2 ~ 18.3
+
+* Change: Develop
+  [GhitaB]
+
+
 ## [6.0.15-40](https://github.com/eea/clms-backend/releases/tag/6.0.15-40) - 2025-08-27T14:30:20Z
 
 ### Dependency updates
