@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-63](https://github.com/eea/clms-backend/releases/tag/6.0.15-63) - 2025-09-29T23:19:50Z
+
+### Dependency updates
+
+##### [clms.addon](https://github.com/eea/clms.addon/releases): 14.9 ~ 15.0
+
+* Change: Develop
+  [GhitaB]
+
+
 ## [6.0.15-60](https://github.com/eea/clms-backend/releases/tag/6.0.15-60) - 2025-09-26T23:17:07Z
 
 ### Dependency updates
