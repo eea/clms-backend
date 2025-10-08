@@ -1,6 +1,41 @@
 # Changelog
 
 
+## [6.0.15-68](https://github.com/eea/clms-backend/releases/tag/6.0.15-68) - 2025-10-08T17:13:05Z
+
+### Plone
+
+#### Upgrade [eeacms/plone-backend](https://github.com/eea/plone-backend): 6.0.15-18 ~ 6.0.15-19 
+
+##### eeacms/plone-backend:[6.0.15-19](https://github.com/eea/plone-backend/releases/tag/6.0.15-19)
+###### Dependency updates
+
+###### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 8.4 ~ 9.0
+
+* Fix: teaser block serializer to not clear href for non-http urls
+ [ichim-david - refs #292589]
+* Breaking: drop testing for Plone 5 that used plone.restapi 8.x
+ Version 8 was deprecated in 2023
+ [ichim-david - refs #292589]
+
+### Dependency updates
+
+##### [clms.addon](https://github.com/eea/clms.addon/releases): 15.1 ~ 15.2
+
+* Change: Develop
+  [GhitaB]
+
+##### [clms.downloadtool](https://pypi.org/project/clms.downloadtool/#changelog): 12.7 ~ 12.8
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 8.4 ~ 9.0
+
+* Fix: teaser block serializer to not clear href for non-http urls
+  [ichim-david - refs #292589]
+* Breaking: drop testing for Plone 5 that used plone.restapi 8.x
+  Version 8 was deprecated in 2023
+  [ichim-david - refs #292589]
+
+
 ## [6.0.15-63](https://github.com/eea/clms-backend/releases/tag/6.0.15-63) - 2025-09-29T23:19:50Z
 
 ### Dependency updates
