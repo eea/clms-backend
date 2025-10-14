@@ -2,7 +2,7 @@
 -f https://code.codesyntax.com/static/public/
 clms.addon==15.2
 clms.downloadtool==13.1
-clms.statstool==3.8
+clms.statstool==3.9
 clms.types==19.0
 
 eea.volto.policy==9.0
