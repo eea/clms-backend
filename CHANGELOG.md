@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-94](https://github.com/eea/clms-backend/releases/tag/6.0.15-94) - 2025-11-19T16:17:34Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 9.2 ~ 9.3
+
+* Fix: migration script to handle missing catalog entries for images
+  [ichim-david refs #254622]
+
+
 ## [6.0.15-91](https://github.com/eea/clms-backend/releases/tag/6.0.15-91) - 2025-11-17T13:24:04Z
 
 ### Dependency updates
