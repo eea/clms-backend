@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [6.0.15-110](https://github.com/eea/clms-backend/releases/tag/6.0.15-110) - 2025-12-04T18:55:48Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 9.3 ~ 10.0
+
+###### What's Changed
+* Advanced restricted block by @tedw87 in https://github.com/eea/eea.volto.policy/pull/88
+* Release 10.0 by @avoinea in https://github.com/eea/eea.volto.policy/pull/89
+
+
+**Full Changelog**: https://github.com/eea/eea.volto.policy/compare/9.3...10.0
+
+
 ## [6.0.15-106](https://github.com/eea/clms-backend/releases/tag/6.0.15-106) - 2025-12-03T00:21:20Z
 
 ### Dependency updates
