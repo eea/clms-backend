@@ -5,7 +5,7 @@ clms.downloadtool==15.6
 clms.statstool==3.9
 clms.types==19.3
 
-eea.volto.policy==10.0
+eea.volto.policy==11.0
 eea.meeting==2.0a1+cs.18
 
 ftw.tokenauth==2.0+cs.9
