@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [6.0.15-115](https://github.com/eea/clms-backend/releases/tag/6.0.15-115) - 2025-12-22T10:18:20Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 10.0 ~ 11.1
+
+* Fix: Handle NoInteraction during inherited field lookup in indexing
+  [avoinea - refs #295495]
+
+* Feature: Inheritable fields, for example inherit preview_image from parent if context doesn't have a preview_image
+  [razvanMiu - refs #295495]
+
+
 ## [6.0.15-110](https://github.com/eea/clms-backend/releases/tag/6.0.15-110) - 2025-12-04T18:55:48Z
 
 ### Dependency updates
