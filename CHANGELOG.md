@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-116](https://github.com/eea/clms-backend/releases/tag/6.0.15-116) - 2025-12-23T00:57:33Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.1 ~ 11.2
+
+* Fix: Index image scales with relative_path to context
+  [avoinea - refs #295495]
+
+
 ## [6.0.15-115](https://github.com/eea/clms-backend/releases/tag/6.0.15-115) - 2025-12-22T10:18:20Z
 
 ### Dependency updates
