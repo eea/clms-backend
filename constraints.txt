@@ -6,7 +6,7 @@ clms.statstool==3.9
 clms.types==19.4
 
 eea.volto.policy==11.2
-eea.meeting==2.0a1+cs.19
+eea.meeting==2.0a1+cs.20
 
 ftw.tokenauth==2.0+cs.9
 pas.plugins.oidc==1.0b4+cs.9
