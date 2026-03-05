@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-131](https://github.com/eea/clms-backend/releases/tag/6.0.15-131) - 2026-03-05T01:25:23Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.2 ~ 11.3
+
+* Fix: Override titles on cards when target is selected
+  [tedw87 - refs #298262]
+
+
 ## [6.0.15-118](https://github.com/eea/clms-backend/releases/tag/6.0.15-118) - 2026-01-16T00:19:20Z
 
 ### Dependency updates
