@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-138](https://github.com/eea/clms-backend/releases/tag/6.0.15-138) - 2026-03-26T01:34:42Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.3 ~ 11.4
+
+* Change: (FIX): Fix 404 page when parent is private refs #284281
+  [dobri1408]
+
+
 ## [6.0.15-131](https://github.com/eea/clms-backend/releases/tag/6.0.15-131) - 2026-03-05T01:25:23Z
 
 ### Dependency updates
