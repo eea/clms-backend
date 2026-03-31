@@ -9,7 +9,7 @@ eea.volto.policy==11.4
 eea.meeting==2.0a1+cs.20
 
 ftw.tokenauth==2.0+cs.9
-pas.plugins.oidc==1.0b4+cs.10
+pas.plugins.oidc==1.0b4+cs.11
 
 pas.plugins.ldap==1.8.2
 XlsxWriter==3.0.8
