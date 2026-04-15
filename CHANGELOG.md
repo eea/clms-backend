@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [6.0.15-142](https://github.com/eea/clms-backend/releases/tag/6.0.15-142) - 2026-04-15T00:33:35Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 11.4 ~ 12.0
+
+
+
+
 ## [6.0.15-138](https://github.com/eea/clms-backend/releases/tag/6.0.15-138) - 2026-03-26T01:34:42Z
 
 ### Dependency updates
