@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-149](https://github.com/eea/clms-backend/releases/tag/6.0.15-149) - 2026-04-29T15:26:53Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.3 ~ 12.4
+
+* Change: Cleanup printf - TeaserBlockSerializerBase._process_data called
+  [avoinea]
+
+
 ## [6.0.15-148](https://github.com/eea/clms-backend/releases/tag/6.0.15-148) - 2026-04-22T00:22:27Z
 
 ### Dependency updates
