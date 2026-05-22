@@ -1,6 +1,23 @@
 # Changelog
 
 
+## [6.0.15-155](https://github.com/eea/clms-backend/releases/tag/6.0.15-155) - 2026-05-22T00:16:02Z
+
+### Dependency updates
+
+##### [eea.volto.policy](https://github.com/eea/eea.volto.policy/releases): 12.4 ~ 12.6
+
+* Fix: Restore Plone 5.2 / Plone 6 compatibility for Scripts/Styles viewlets
+  (try scripts/styles modules, fall back to resource)
+  [valipod]
+
+* Fix: Point Scripts/Styles viewlets to their split modules (.scripts/.styles)
+  [valipod]
+
+### Internal
+
+- undo Release eea.volto.policy 12.5 - [Ghiță Bizău -  [`ebbfaa1`](https://github.com/eea/clms-backend/commit/ebbfaa1bdde8ad4ab65ea29f732e87f459982b0e)]
+
 ## [6.0.15-149](https://github.com/eea/clms-backend/releases/tag/6.0.15-149) - 2026-04-29T15:26:53Z
 
 ### Dependency updates
