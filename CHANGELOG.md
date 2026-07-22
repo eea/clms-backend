@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [6.0.15-161](https://github.com/eea/clms-backend/releases/tag/6.0.15-161) - 2026-07-22T23:28:10Z
+
+### Internal
+
+- test: increase retrys on tests - [valentinab25 -  [`e9005bd`](https://github.com/eea/clms-backend/commit/e9005bd6b012dcc6c8d2704eb5a3e19a0731545e)]
+- test: increase retrys on tests - [valentinab25 -  [`4c24e1b`](https://github.com/eea/clms-backend/commit/4c24e1b6c56cc6bcd9db41f93106f0a33f79cbb6)]
+
 ## [6.0.15-155](https://github.com/eea/clms-backend/releases/tag/6.0.15-155) - 2026-05-22T00:16:02Z
 
 ### Dependency updates
