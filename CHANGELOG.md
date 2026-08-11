@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [6.0.15-164](https://github.com/eea/clms-backend/releases/tag/6.0.15-164) - 2026-08-11T23:26:38Z
+
+### Dependency updates
+
+##### [clms.addon](https://github.com/eea/clms.addon/releases): 18.1 ~ 18.2
+
+* Change: Develop
+  [ana-oprea]
+
+
 ## [6.0.15-163](https://github.com/eea/clms-backend/releases/tag/6.0.15-163) - 2026-08-10T23:37:46Z
 
 ### Dependency updates
