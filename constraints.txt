@@ -5,6 +5,11 @@ clms.downloadtool==16.7
 clms.statstool==3.9
 clms.types==20.5
 
+plone.app.portlets==5.0.8
+plone.app.event==5.2.4
+RestrictedPython==8.3
+icalendar==7.1.3
+
 eea.volto.policy==12.7
 eea.meeting==2.0a1+cs.20
 
