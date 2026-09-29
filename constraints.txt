@@ -14,7 +14,7 @@ eea.volto.policy==13.9
 eea.meeting==2.0a1+cs.20
 
 ftw.tokenauth==2.0+cs.9
-pas.plugins.oidc==1.0b4+cs.11
+pas.plugins.oidc==1.0b4+cs.12
 
 pas.plugins.ldap==1.8.2
 XlsxWriter==3.0.8
@@ -112,4 +112,4 @@ z3c.unconfigure==2.0
 # clms.addon==8.4.dev0
 Products.mcdutils==4.1
 
-pyproj==3.6.1 
+pyproj==3.6.1
